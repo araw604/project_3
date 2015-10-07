@@ -1,0 +1,67 @@
+/*skdjfhisdjnfkjsdnf*/
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-bold-webfont.eot');
+    src: url('opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-bold-webfont.woff2') format('woff2'),
+         url('opensans-bold-webfont.woff') format('woff'),
+         url('opensans-bold-webfont.ttf') format('truetype'),
+         url('opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-bolditalic-webfont.eot');
+    src: url('opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('opensans-bolditalic-webfont.woff') format('woff'),
+         url('opensans-bolditalic-webfont.ttf') format('truetype'),
+         url('opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-light-webfont.eot');
+    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light-webfont.woff2') format('woff2'),
+         url('opensans-light-webfont.woff') format('woff'),
+         url('opensans-light-webfont.ttf') format('truetype'),
+         url('opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('opensans-lightitalic-webfont.eot');
+    src: url('opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('opensans-lightitalic-webfont.woff') format('woff'),
+         url('opensans-lightitalic-webfont.ttf') format('truetype'),
+         url('opensans-lightitalic-webfont.svg#open_sanslight_italic') format('svg');
+    font-weight: lighter;
+    font-style: italic;
+
+}
+
+
+
+body {
+	background: green;
+}
