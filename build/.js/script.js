@@ -1,1 +1,51 @@
-$(function(){var t,a,e,n,l=$(".album-list");$("#album-search").on("submit",function(i){i.preventDefault(),l.empty(),a="",e=$("#artist-name").val().replace(/ /g,"+"),n="https://itunes.apple.com/search?entity=album&limit=6&term="+e,$.ajax({method:"GET",url:n,dataType:"jsonp"}).done(function(e){t=e.results,0!==t.length?$.each(t,function(t,e){a+="<li>",a+='<img src="'+e.artworkUrl100+'" />',a+="<p>"+e.collectionName+"</p>",a+="</li>"}):a+='<p style="margin-top: 18px;">Sorry, artist not found.</p>',l.append(a)}).fail(function(){l.append("<li>Sorry! There was a problem, please try again.</li>")})})});
+$(function() {
+
+   // set some initial variables
+   var albumData,
+       albumItems,
+       artistName,
+       itunesUrl,
+       $albumList = $('.album-list');
+
+   // when the form is submitted
+   $('#album-search').on('submit', function(event) {
+
+      event.preventDefault();
+
+      // reset all the things
+      $albumList.empty();
+      albumData, albumItems = '',
+
+      // get the search string
+      artistName = $('#artist-name').val().replace(/ /g, '+'),
+      itunesUrl = "https://itunes.apple.com/search?entity=album&limit=6&term=" + artistName;
+
+      // make the call to the endpoint
+      $.ajax({
+         method: 'GET',
+         url: itunesUrl,
+         dataType: 'jsonp'
+      })
+      // if it works...
+      .done(function(data) {
+         albumData = data.results;
+​
+         if ( albumData.length !== 0 ) {
+            $.each(albumData, function(key, value) {
+               albumItems += '<li>';
+               albumItems += '<img src="' + value['artworkUrl100'] + '" />';
+               albumItems += '<p>' + value['collectionName'] + '</p>';
+               albumItems += '</li>';
+            });
+         } else {
+            albumItems += '<p style="margin-top: 18px;">Sorry, artist not found.</p>';
+         }
+
+         $albumList.append(albumItems);
+      })
+      // and if it fails...
+      .fail(function() {
+         $albumList.append('<li>Sorry! There was a problem, please try again.</li>');
+      });
+   });
+});

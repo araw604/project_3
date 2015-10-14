@@ -2,21 +2,54 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/main.css">
-<!-- <script src="script.js"></script> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<title>Instagrid</title>	
 </head>
 
 <body>
-	<div class="itunes-widget">
-	   <form action="#" id="album-search">
-	      <div class="artist-search">
-	         <input type="text" name="artist_name" id="artist-name" placeholder="Enter artist first and last name" />
-	         <input type="submit" value="Get Albums" />
-	      </div>
-	   </form>
-	   <ul class="album-list"></ul>
+<!--my instagram brah-->
+	<header>
+		<div class="logo">
+			<img src="assets/images/instagrid-logo.svg" alt="logo" />
+		</div>
+
+		<div class="search">
+			<div id="icon">
+				<img src="assets/images/instagrid-icon.svg" alt="icon" />
+			</div>
+
+			<div class="itunes-widget">
+	   			<form action="#" id="album-search">
+	    			<div class="artist-search">
+	         			<input type="text" name="artist_name" id="artist-name" placeholder="Enter artist first and last name" />
+	         			<button> <i class="fa fa-search"></i>
+	         			</button>
+	      			</div>
+	   			</form>
+	   		</div>
+		</div>
+	</header>
+	<div style="display:none" id="loader"><img src="assets/images/ajax-loader.gif" />
 	</div>
+		<div id="clicktodis">
+	  		<img src="assets/images/search-tags.svg" alt="img" />
+	 	</div>
+	  	<div class="albumbrah">
+	 
+	   		<ul class="album-list"></ul>
+	  
+	  	</div>
+		<div class="loadmorebutton">
+		<button style="display:none" class="loadmore">LOAD MORE </button>
+		</div>
+		<p class="copyright"> &copy Copyright 2015 INSTAGRID</p>
+
+
+
+
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

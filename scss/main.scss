@@ -1,0 +1,211 @@
+
+@import "reset";
+@import "fonts";
+@import "mixin";
+
+body {
+	font-family: 'open_sans';
+	font-weight: light;
+	font-size: 12px;
+}
+.album-list{
+	display: flex;
+	// border: 2px solid #c2c2c2;
+	margin: auto;
+	flex-direction: column;
+
+}
+
+.border1lines {
+   		
+   		margin-bottom: 2rem;
+ }
+
+.albumbrah {
+	border: 1px solid #c2c2c2;
+}
+// .albumbrah{
+// 	background-image: url(../assets/images/search-tags.svg);
+// 	display: flex;
+// 	height:360vh;
+// 	width: 300vh;
+// 	text-align: center;
+// 	margin: auto;
+// }
+
+#clicktodis {
+	width: 65%;
+	margin:auto;
+}
+
+.logo {
+	width: 60%;
+	//margin: auto;
+
+}
+
+#icon{
+	width: 10%;
+	margin: auto;
+}
+
+.search {
+	background-image: url(../assets/images/pattern.png);
+	padding: 2rem;
+}
+
+.itunes-widget{
+	text-align: center;
+	margin: 2rem;
+}
+
+li img{
+	width: 100%;
+	// border: 1px solid #c2c2c2;
+}
+
+.copyright {
+	text-align: center;
+	font-family: 'open_sans';
+	font-weight: lighter;
+	font-size: .5rem;
+	margin: 25px 0 20px 0;
+	border-top: 1px solid #c2c2c2;
+}
+
+// .rounded{
+// 	border-radius: 50%;
+// }
+
+.container {
+  display:flex;
+  flex-display: row;
+  justify-content:space-between;
+}
+
+.item1 {
+  
+  width:60px; height:60px;
+  
+  background-size:cover;
+  border-radius: 50%;
+  overflow:hidden;
+  margin:1rem;
+}
+
+.item2 {
+  // display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:right;
+  padding-right:1rem;
+}
+
+.username {
+	margin-top: 1rem;
+	font-family: 'open_sans';
+	font-size: 1.2rem;
+}
+
+// .usernamelikescomments {
+// 	display: flex;
+
+// }
+
+// .inyofayce {
+//  display: flex;
+//  justify-content: space-between;
+//  flex-display: column;
+// }
+
+#loader {
+	text-align: center;
+
+}
+
+#loader img{
+	width: 200px;
+}
+
+.loadmore {
+	height: 35px;
+	width: 200px;
+	font-family: 'open_sans';
+	font-size:1.3rem;
+	text-align: center;
+	margin: 0 auto;
+	color: white;
+	background-color: red;
+}
+
+.loadmorebutton {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+body{
+  font-size: 12px;
+  color: #2e2e2e;
+
+  @include bp(tablet) {
+  	// background-color: green;
+
+  	.album-list {
+  		display: flex;
+  		width: 100%;
+  		flex-wrap: wrap;
+  		flex-direction: row;
+  		height: auto;
+  		// justify-content:space-between;
+  		
+  	}
+  	.border1lines {
+  		width: 31%;
+  		border: 1px solid #dbdbdb;
+   		margin: auto;
+   		margin-bottom: 2rem;
+  		
+  		// flex-direction: row;
+  	}
+
+  	.username {
+	
+	font-size: .7rem;
+     }
+
+
+
+  } 
+  @include bp(desktop) {
+  	// background-color: red;
+
+   	.album-list {
+  		
+   		width: 100%;
+   		flex-wrap: wrap;
+   		flex-direction: row;
+  		
+  		
+   	}
+   	.border1lines {
+   		width: 24%;
+   		border: 1px solid #dbdbdb;
+   		margin: auto;
+   		margin-bottom: 2rem;
+}
+
+	.username {
+	
+	font-size: 1rem;
+     }
+     // background-color: green;
+   }
+}
+
+// .backgroundpic {
+// background-image: url(../assets/images/pattern.png);
+// ​}
+
+// .backgroundpic{
+// 	background-image: url(../assets/images/pattern.png);
+// }
