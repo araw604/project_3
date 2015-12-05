@@ -1,0 +1,23 @@
+/*-----------------------------------------*/
+/* Footer */
+/*-----------------------------------------*/
+
+.copyright {
+   border-top: $light-grey-border;
+   padding-bottom: $base-space-unit;
+   padding-top: $base-space-unit;
+
+   p {
+      color: #8c8c8c;
+      @include font-size(.65);
+      text-align: center;
+
+      @include tablet {
+         @include font-size(.7);
+      }
+
+      @include desktop {
+         @include font-size(.8);
+      }
+   }
+}

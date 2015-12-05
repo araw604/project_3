@@ -1,0 +1,84 @@
+/*-----------------------------------------*/
+/* Extra Resetting */
+/*-----------------------------------------*/
+
+* { box-sizing: border-box; }
+
+strong, b, strong *, b * {
+  font-style: normal;
+  font-weight: bold !important;
+}
+
+em, i, em *, i * {
+  font-style: italic;
+}
+
+fieldset,
+img,
+a img {
+  border: 0;
+}
+
+img {
+   height: auto;
+   max-width: 100%;
+}
+
+/*-----------------------------------------*/
+/* Global */
+/*-----------------------------------------*/
+
+html {
+   @include font-size(1.2);
+}
+
+/* Typography */
+
+body,
+button,
+input {
+   font-family: 'Open Sans';
+   @include font-size(.8);
+
+   @include tablet {
+      @include font-size(.9);
+   }
+
+   @include desktop {
+      @include font-size(1);
+   }
+}
+
+/*-----------------------------------------*/
+/* Helpers */
+/*-----------------------------------------*/
+
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1000px;
+   padding-left: 2.5%;
+   padding-right: 2.5%;
+   width: 100%;
+}
+
+.screen-reader {
+   border: 0;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px;
+}
+
+.all-caps {
+   text-transform: uppercase;
+}

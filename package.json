@@ -1,25 +1,26 @@
 {
-  "name": "proj_3",
+  "name": "p3-solution",
   "version": "1.0.0",
-  "description": "instagrid",
+  "description": "",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.0",
-    "browser-sync": "^2.9.10",
-    "gulp-sass": "^2.0.4"
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-jscs": "^3.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-uglify": "^1.4.1",
+    "jshint-stylish": "^2.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/araw604/project_3.git"
-  },
-  "author": "Ankit",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/araw604/project_3/issues"
-  },
-  "homepage": "https://github.com/araw604/project_3#readme"
+  "author": "ankit",
+  "license": "ISC"
 }

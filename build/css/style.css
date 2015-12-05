@@ -1,0 +1,400 @@
+/*-----------------------------------------*/
+/* Eric Meyer Reset */
+/*-----------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Extra Resetting */
+/*-----------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+strong, b, strong *, b * {
+  font-style: normal;
+  font-weight: bold !important; }
+
+em, i, em *, i * {
+  font-style: italic; }
+
+fieldset,
+img,
+a img {
+  border: 0; }
+
+/*-----------------------------------------*/
+/* Fonts */
+/*-----------------------------------------*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensans-light-webfont.eot");
+  src: url("../../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-light-webfont.woff2") format("woff2"), url("../../fonts/opensans-light-webfont.woff") format("woff"), url("../../fonts/opensans-light-webfont.ttf") format("truetype"), url("../../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensans-lightitalic-webfont.eot");
+  src: url("../../fonts/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/opensans-lightitalic-webfont.woff") format("woff"), url("../../fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensans-bold-webfont.eot");
+  src: url("../../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../../fonts/opensans-bold-webfont.woff") format("woff"), url("../../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/opensans-bolditalic-webfont.eot");
+  src: url("../../fonts/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/opensans-bolditalic-webfont.woff") format("woff"), url("../../fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+/*-----------------------------------------*/
+/* Extra Resetting */
+/*-----------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+strong, b, strong *, b * {
+  font-style: normal;
+  font-weight: bold !important; }
+
+em, i, em *, i * {
+  font-style: italic; }
+
+fieldset,
+img,
+a img {
+  border: 0; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+/*-----------------------------------------*/
+/* Global */
+/*-----------------------------------------*/
+html {
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+/* Typography */
+body,
+button,
+input {
+  font-family: 'Open Sans';
+  font-size: 8px;
+  font-size: 0.8rem; }
+  @media (min-width: 600px) {
+    body,
+    button,
+    input {
+      font-size: 9px;
+      font-size: 0.9rem; } }
+  @media (min-width: 1000px) {
+    body,
+    button,
+    input {
+      font-size: 10px;
+      font-size: 1rem; } }
+
+/*-----------------------------------------*/
+/* Helpers */
+/*-----------------------------------------*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  width: 100%; }
+
+.screen-reader {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.all-caps {
+  text-transform: uppercase; }
+
+/*-----------------------------------------*/
+/* Header */
+/*-----------------------------------------*/
+.search-hashtags {
+  background: #20545b url("../../images/pattern.png"); }
+
+.logo {
+  display: block;
+  margin: 1rem auto;
+  max-width: 150px; }
+  @media (min-width: 600px) {
+    .logo {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 200px; } }
+  @media (min-width: 1000px) {
+    .logo {
+      max-width: 250px; } }
+
+/*-----------------------------------------*/
+/* Content */
+/*-----------------------------------------*/
+/* Form Defaults */
+input {
+  border: 1px solid #dbdbdb;
+  font-family: 'Open Sans', serif;
+  padding: 0.33333rem 2.5rem 0.33333rem 1rem; }
+
+button {
+  border: 2px solid #c8c8c8;
+  background-color: #e24420;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  padding: 0.33333rem 2rem;
+  text-transform: uppercase; }
+  button:hover {
+    background-color: #ce3c1b; }
+
+/* Search */
+.search-form {
+  margin-top: 3rem; }
+
+.search-form-inner {
+  display: inline-block;
+  position: relative; }
+
+.search-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  padding-right: 0.33333rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.33333rem; }
+  .search-button span {
+    display: none;
+    font-family: 'Open Sans', sans-serif; }
+  .search-button:after {
+    color: #c2c2c2;
+    content: '\f002'; }
+  .search-button:hover:after {
+    color: #e24420; }
+  @media (min-width: 600px) {
+    .search-button {
+      font-size: 11px;
+      font-size: 1.1rem; } }
+  @media (min-width: 1000px) {
+    .search-button {
+      font-size: 12px;
+      font-size: 1.2rem; } }
+  .search-button:hover {
+    background: none; }
+
+.search-hashtags {
+  padding: 3rem 0; }
+  .search-hashtags form {
+    text-align: center; }
+
+.instagram-icon {
+  display: block;
+  margin: 0 auto;
+  width: 150px; }
+
+/* Photo Grid */
+.photo-grid {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.grid-wrapper {
+  border: 2px solid #c8c8c8;
+  padding: 0.33333rem; }
+
+.ajax-loader {
+  display: none;
+  margin: 1rem auto; }
+
+.load-button {
+  display: none;
+  margin: 2rem auto 0; }
+
+.photos ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.photos li {
+  -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  max-width: 100%; }
+  .photos li .inner-item-wrapper {
+    border: 1px solid #dbdbdb;
+    margin: 0.5rem; }
+  @media (min-width: 480px) {
+    .photos li {
+      -webkit-flex: 0 1 50%;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%;
+      max-width: 50%; } }
+  @media (min-width: 600px) {
+    .photos li {
+      -webkit-flex: 0 1 33.33%;
+          -ms-flex: 0 1 33.33%;
+              flex: 0 1 33.33%;
+      max-width: 33.33%; } }
+  @media (min-width: 1000px) {
+    .photos li {
+      -webkit-flex: 0 1 25%;
+          -ms-flex: 0 1 25%;
+              flex: 0 1 25%;
+      max-width: 25%; } }
+
+.photos img {
+  border-bottom: 1px solid #dbdbdb;
+  display: block; }
+
+.photo-meta {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem; }
+
+.profile-wrapper {
+  height: auto;
+  overflow: hidden;
+  width: 33%; }
+  .profile-wrapper img {
+    border-radius: 50%;
+    max-width: 50px; }
+
+.user-social {
+  font-weight: bold;
+  text-align: right;
+  width: 67%; }
+  .user-social p:first-child {
+    line-height: 1.5;
+    margin-top: 0.33333rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    @media (min-width: 600px) {
+      .user-social p:first-child {
+        margin-top: 0.16667rem; } }
+    @media (min-width: 1000px) {
+      .user-social p:first-child {
+        margin-top: 0; } }
+  .user-social p:nth-child(2) {
+    font-size: 6px;
+    font-size: 0.6rem; }
+    .user-social p:nth-child(2) span:before {
+      font-family: 'FontAwesome';
+      margin-right: 0.16667rem; }
+    .user-social p:nth-child(2) span:first-child:before {
+      content: '\f086'; }
+    .user-social p:nth-child(2) span:nth-child(2):before {
+      content: '\f004';
+      margin-left: 0.5rem; }
+    @media (min-width: 600px) {
+      .user-social p:nth-child(2) {
+        font-size: 7px;
+        font-size: 0.7rem; } }
+    @media (min-width: 1000px) {
+      .user-social p:nth-child(2) {
+        font-size: 8px;
+        font-size: 0.8rem; } }
+
+.feedback {
+  font-style: italic;
+  margin: 1rem 0;
+  text-align: center; }
+
+/*-----------------------------------------*/
+/* Footer */
+/*-----------------------------------------*/
+.copyright {
+  border-top: 1px solid #dbdbdb;
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+  .copyright p {
+    color: #8c8c8c;
+    font-size: 6.5px;
+    font-size: 0.65rem;
+    text-align: center; }
+    @media (min-width: 600px) {
+      .copyright p {
+        font-size: 7px;
+        font-size: 0.7rem; } }
+    @media (min-width: 1000px) {
+      .copyright p {
+        font-size: 8px;
+        font-size: 0.8rem; } }
